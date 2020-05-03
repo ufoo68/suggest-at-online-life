@@ -1,14 +1,15 @@
-# Welcome to your CDK TypeScript project!
+# suggest@online.life
 
-This is a blank project for TypeScript development with CDK.
+[おうちハッカソン](https://connpass.com/event/174573/)にて作成したLINE Botです。以下のオンライン施設（アミューズメント）に関する情報を案内します。
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+- オンライン水族館
+- オンライン神社
+- オンライン温泉
 
-## Useful commands
+施設の情報は[こちらのAPI](https://github.com/ufoo68/online-amusement-api)より収集しております。
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+## 友達登録
+
+以下のQRコードをスキャンしてください。
+
+![QR](./assets/QR.png)
