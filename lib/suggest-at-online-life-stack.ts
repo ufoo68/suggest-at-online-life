@@ -10,6 +10,9 @@ export class SuggestAtOnlineLifeStack extends cdk.Stack {
       environment: {
         ACCESS_TOKEN: process.env.ACCESS_TOKEN!,
         CHANNEL_SECRET: process.env.CHANNEL_SECRET!,
+        REGION: process.env.REGION!,
+        URL: process.env.URL!,
+        API_KEY: process.env.API_KEY!,
       }
     })
   }

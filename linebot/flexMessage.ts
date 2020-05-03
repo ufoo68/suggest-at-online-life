@@ -1,9 +1,10 @@
 import * as Types from '@line/bot-sdk/lib/types'
+import { Amusument } from './graphql'
 
-const flexMessage: Types.FlexCarousel = {
+export const flexMessage = (amusements: Amusument[]): Types.FlexCarousel => ({
   type: 'carousel',
-  contents: [
-    {
+  contents: amusements.map(
+    amusement => ({
       type: 'bubble',
       body: {
         type: 'box',
@@ -11,10 +12,14 @@ const flexMessage: Types.FlexCarousel = {
         contents: [
           {
             type: 'text',
-            text: 'hello, world'
-          }
+            text: `${amusement.title}`,
+          },
+          {
+            type: 'text',
+            text: `${amusement.url}`,
+          },
         ]
       }
-    },
-  ]
-}
+    })
+  )
+})
