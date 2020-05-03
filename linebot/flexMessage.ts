@@ -11,12 +11,16 @@ export const flexMessage = (amusements: Amusument[]): Types.FlexCarousel => ({
         layout: 'vertical',
         contents: [
           {
-            type: 'text',
-            text: `${amusement.title}`,
+            type: 'button',
+            action: {
+              type: 'uri',
+              label: `${amusement.title}`,
+              uri: `${amusement.url}`,
+            },
           },
           {
-            type: 'text',
-            text: `${amusement.url}`,
+            'type': 'text',
+            'text': `${amusement.summary}`
           },
         ]
       }
