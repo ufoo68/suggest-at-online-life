@@ -8,6 +8,25 @@
 
 施設の情報は[こちらのAPI](https://github.com/ufoo68/online-amusement-api)より収集しております。
 
+## 使い方
+
+現在これらのメニューがあります。
+
+- オンライン水族館
+- オンライン神社
+- オンライン温泉
+- 新しく投稿する
+
+<img src="./assets/menu.jpg" width="200px">
+
+「新しく投稿する」を選択すると以下のようなフォームが現れます。
+
+<img src="./assets/form.jpg" width="200px">
+
+また、投稿したことを他のお友達にシェアすることができます。
+
+<img src="./assets/dialog.jpg" width="200px">
+
 ## 友達登録
 
 以下のQRコードをスキャンしてください。
