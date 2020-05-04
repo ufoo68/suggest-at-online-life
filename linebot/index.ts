@@ -28,7 +28,7 @@ const appSyncClient = new AWSAppSyncClient({
 
 async function eventHandler(event: Types.MessageEvent): Promise<any> {
   if (event.type !== 'message' || event.message.type !== 'text') {
-    return client.replyMessage(event.replyToken, buildReplyText('対応していないメッセージです'))
+    return null
   }
 
   try {
@@ -39,14 +39,15 @@ async function eventHandler(event: Types.MessageEvent): Promise<any> {
 
     const message = flexMessage(result.data.getAquarium ?? result.data.getOnsen ?? result.data.getShrime ?? [])
 
-    return client.replyMessage(event.replyToken, {
+    return client.replyMessage(event.replyToken, [
+    buildReplyText(`これらの「${event.message.text}」がみつかりました。`),
+    {
       type: 'flex',
       altText: 'オンライン施設',
       contents: message,
-    })
-
+    }])
   } catch (e) {
-    console.log(e)
+    console.error(e)
     return client.replyMessage(event.replyToken, buildReplyText('対応していないメッセージです'))
   }
 }
