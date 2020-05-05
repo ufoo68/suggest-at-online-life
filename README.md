@@ -19,6 +19,10 @@
 
 <img src="./assets/menu.jpg" width="200px">
 
+「オンライン水族館」・「オンライン神社」・「オンライン温泉」を選択すると[フレックスメッセージ](https://developers.line.biz/ja/docs/messaging-api/using-flex-messages/)の形式でオンライン施設の一覧が表示されます。
+
+<img src="./assets/flex.jpg" width="200px">
+
 「新しく投稿する」を選択すると以下のようなフォームが現れます。
 
 <img src="./assets/form.jpg" width="200px">
