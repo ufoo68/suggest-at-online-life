@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@line/bot-sdk": "^6.8.4",
+    "@line/bot-sdk": "^7.0.0",
     "@types/aws-lambda": "^8.10.51",
     "aws-lambda": "^1.0.6",
     "line-message-builder": "^1.1.1",
